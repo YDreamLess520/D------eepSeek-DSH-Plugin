@@ -1,0 +1,32 @@
+{
+  "name": "dsh-d-eepseek",
+  "version": "0.4.0",
+  "description": "D-------eepSeek: every user message runs a mandatory multi-dimension parallel council before the first answer, then synthesizes one deep, broad reply — heavy reasoning-token spend with hard caps and no loops.",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/YDreamLess520/D------eepSeek-DSH-Plugin.git" },
+  "homepage": "https://github.com/YDreamLess520/D------eepSeek-DSH-Plugin#readme",
+  "private": true,
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "INSTALL.md",
+    "LICENSE",
+    "tools/*.mjs",
+    "test/*.mjs"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
